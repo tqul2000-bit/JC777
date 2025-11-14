@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-      <title>Cross</title>
-      <style>
+<html>
+<head>
+    <title>White Cross Page</title>
+    <style>
         body {
-          display: flex;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: #f5f5f5;
         }
 
-        .cross {
-            position: relative;
-            width: 40px;
-            height: 150px;
-            background: black;
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
         }
 
-        .cross::before {
-            content: "";
-            position: absolute;
-            top: 40px;
-            left: -55px;
-            width: 150px;
-            height: 40px;
-            background: black;
+        .cross-image {
+            width: 200px;      /* You can change the size */
+            height: auto;
+            filter: brightness(1000%); /* Ensures the cross stays white */
         }
-      </style>
-  </head>
-    <body>
-       <div class="cross"></div>
-    </body>
-  </html>
+    </style>
+</head>
+<body>
+
+    <h1>The Cross</h1>
+
+    <!-- Replace with your own white cross image -->
+    <img src="white-cross.png" alt="White Cross" class="cross-image">
+
+</body>
+</html>
