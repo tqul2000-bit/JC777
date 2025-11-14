@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Cross</title>
+      <style>
+        body {
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+
+        .cross {
+            position: relative;
+            width: 40px;
+            height: 150px;
+            background: black;
+        }
+
+        .cross::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: -55px;
+            width: 150px;
+            height: 40px;
+            background: black;
+        }
+      </style>
+  </head>
+    <body>
+       <div class="cross"></div>
+    </body>
+  </html>
