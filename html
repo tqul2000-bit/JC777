@@ -1,39 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>White Cross Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Webpage Layout</title>
     <style>
         body {
-            background: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            height: 100vh;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1600x500') center/cover no-repeat;
+            height: 400px;
+            display: flex;
             align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            font-size: 2.5rem;
+            font-weight: bold;
         }
 
-        h1 {
-            margin-bottom: 20px;
-            font-size: 40px;
+        /* Content Grid */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
         }
 
-        .cross-image {
-            width: 200px;      /* You can change the size */
-            height: auto;
-            filter: brightness(1000%); /* Ensures the cross stays white */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-    <h1>The Cross</h1>
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my awesome webpage layout</p>
+    </header>
 
-    <!-- Replace with your own white cross image -->
-    <img src="white-cross.png" alt="White Cross" class="cross-image">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        Your Hero Banner Text
+    </div>
+
+    <section class="content">
+        <div class="card">
+            <h2>Section 1</h2>
+            <p>This is a description for section 1.</p>
+        </div>
+
+        <div class="card">
+            <h2>Section 2</h2>
+            <p>This is a description for section 2.</p>
+        </div>
+
+        <div class="card">
+            <h2>Section 3</h2>
+            <p>This is a description for section 3.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Website — All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
+
