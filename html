@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Webpage Layout</title>
+    <title>My Faith</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: url('https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/480607015_1179309273565045_16055116333067686_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=D6i6GwsLqQcQ7kNvwGgmQ7j&_nc_oc=AdmJVhlHwBFttqfrbJeDMiUuuHMqRO-YCP7o7PWMZLHNI0eiMeqJZSUHqurzWN2XqGKjzEUcZeLzPAHha9clMB15&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Yj8QeuSQu9GT163QM5LRxg&oh=00_AfjHOaNwr-EmKwcNX2Uz3NQBmtPM8Q8Up7IDE8u0AaLhcA&oe=691FE694') center top no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background-color: black;  /* fills space if the image doesn't cover fully */
             color: #222;
         }
 
-        /* Header */
         header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* transparent black */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* optional but makes it look clean */
         }
 
-        /* Navigation */
         nav {
-            background: #222;
+            background: rgba(0, 0, 0, 0.3); /* transparent */
             display: flex;
             justify-content: center;
             padding: 10px 0;
+            backdrop-filter: blur(5px); /* optional */
         }
 
         nav a {
@@ -39,7 +42,6 @@
             text-decoration: underline;
         }
 
-        /* Hero Section */
         .hero {
             background: url('https://via.placeholder.com/1600x500') center/cover no-repeat;
             height: 400px;
@@ -52,7 +54,6 @@
             font-weight: bold;
         }
 
-        /* Content Grid */
         .content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -67,7 +68,6 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer */
         footer {
             background: #111;
             color: white;
@@ -80,42 +80,39 @@
 <body>
 
     <header>
-        <h1>My Website</h1>
-        <p>Welcome to my awesome webpage layout</p>
+        <h1>My Faith</h1>
+        <p>Lord Jesus, have mercy on me, a sinner.</p>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#">Jesus is King</a>
+
     </nav>
 
     <div class="hero">
-        Your Hero Banner Text
+        The parables of Jesus.
     </div>
 
     <section class="content">
         <div class="card">
-            <h2>Section 1</h2>
-            <p>This is a description for section 1.</p>
+            <h2>The Parable of the Sower</h2>
+            <p>The Lord is the Sower - Matthew 13</p>
         </div>
 
         <div class="card">
-            <h2>Section 2</h2>
-            <p>This is a description for section 2.</p>
+            <h2>The Parable of the Lost Son</h2>
+            <p>The Lord is The Father - Luke 15:11-32</p>
         </div>
 
         <div class="card">
-            <h2>Section 3</h2>
-            <p>This is a description for section 3.</p>
+            <h2>The Parable of The Good Samaritan</h2>
+            <p>The Lord shown Mercy - Luke 10:25-37</p>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 My Website — All Rights Reserved</p>
+        <p>© 2025 My Faith — All Rights Reserved</p>
     </footer>
 
 </body>
 </html>
-
